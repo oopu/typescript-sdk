@@ -57,7 +57,8 @@
         "test": "vitest run",
         "test:watch": "vitest",
         "server": "tsx watch --clear-screen=false scripts/cli.ts server",
-        "client": "tsx scripts/cli.ts client"
+        "client": "tsx scripts/cli.ts client",
+        "demo": "bash src/nebulafog/run-demo.sh"
     },
     "dependencies": {
         "zod": "catalog:runtimeShared"
@@ -84,10 +85,13 @@
         "@modelcontextprotocol/vitest-config": "workspace:^",
         "@types/cross-spawn": "catalog:devTools",
         "@types/eventsource": "catalog:devTools",
+        "@types/express": "catalog:devTools",
+        "@types/supertest": "catalog:devTools",
         "@typescript/native-preview": "catalog:devTools",
         "eslint": "catalog:devTools",
         "eslint-config-prettier": "catalog:devTools",
         "eslint-plugin-n": "catalog:devTools",
+        "express": "catalog:runtimeServerOnly",
         "prettier": "catalog:devTools",
         "supertest": "catalog:devTools",
         "tsdown": "catalog:devTools",
